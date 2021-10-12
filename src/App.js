@@ -14,6 +14,7 @@ function App() {
       available: 1,
       vendor: "Himachal Pvt Ltd",
       category: "Vegetables",
+      img: "https://www.macmillandictionary.com/external/slideshow/full/141151_full.jpg",
     },
     {
       name: "Banana",
@@ -22,6 +23,7 @@ function App() {
       available: 1,
       category: "Fruits",
       vendor: "Organic farms",
+      img: "https://api.time.com/wp-content/uploads/2019/11/gettyimages-459761948.jpg?quality=85&w=1024&h=512&crop=1",
     },
     {
       name: "Drumsticks",
@@ -30,6 +32,7 @@ function App() {
       available: 0,
       category: "Vegetables",
       vendor: "Mallikarjuna farms",
+      img: "https://www.groids.com/wp-content/uploads/2020/10/Drumstick.jpg",
     },
     {
       name: "Orange",
@@ -38,6 +41,7 @@ function App() {
       available: 1,
       vendor: "Nagpur farms",
       category: "Fruits",
+      img: "https://5.imimg.com/data5/VN/YP/MY-33296037/orange-600x600-500x500.jpg",
     },
   ];
 
