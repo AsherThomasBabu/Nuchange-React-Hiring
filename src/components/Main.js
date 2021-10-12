@@ -16,14 +16,22 @@ function Main(props) {
                         <img src={item.img} className="h-20 w-20"></img>
                       </div>
                       <div className="pl-4">
-                        <h4>{item.name}</h4>
-                        <p>{item.price}</p>
+                        <span className="p-2">{item.name}</span>
+                        <span className="bg-blue-500 px-2 py-1 text-white rounded-md">
+                          Price: ₹{item.price}
+                        </span>
                       </div>
                     </div>
                     <div className=" flex flex-col-reverse">
                       <div className="flex flex-row-reverse items-center align-bottom">
-                        <button className="border-2 px-2 py-3">
-                          Add to Cart
+                        <button
+                          className={
+                            item.available === 1
+                              ? "border-2  border-green-500 text-green-500 px-2 py-3 hover:text-white hover:bg-green-500"
+                              : "border-2 pointer-events-none border-red-500 text-red-500 px-2 py-3"
+                          }
+                        >
+                          {item.available === 1 ? "Buy Now" : "Out of Stock"}
                         </button>
                       </div>
                     </div>
