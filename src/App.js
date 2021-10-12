@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const DATA = [
+  const data = [
     {
       name: "Potato",
       id: 1,
@@ -44,7 +44,7 @@ function App() {
     <div>
       <Navbar />
       <Header />
-      <Main data={DATA} />
+      <Main data={data} />
     </div>
   );
 }
