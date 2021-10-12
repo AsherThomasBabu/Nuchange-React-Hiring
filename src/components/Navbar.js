@@ -77,14 +77,6 @@ function Navbar() {
                 )}
               </button>
             </div>
-            <div>
-              <a
-                href="#"
-                className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Products
-              </a>
-            </div>
           </div>
         </div>
 
