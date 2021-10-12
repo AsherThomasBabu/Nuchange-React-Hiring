@@ -1,19 +1,23 @@
 import React from "react";
 
-function FilterDrop() {
+function FilterDrop(props) {
   return (
-    <div>
+    <div className="flex justify-center mt-9">
+      <h4 className="text-xl font-light pr-2 text-center items-center">
+        Filter by category
+      </h4>
       <select
         onChange={(e) => {
           console.log(e.target.value);
         }}
         name="cars"
         id="cars"
+        className="bg-blue-500 text-xl font-light p-2 text-white"
       >
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="All">All</option>
+        {[...props.list].map((item) => {
+          return <option value={item}>{item}</option>;
+        })}
       </select>
     </div>
   );

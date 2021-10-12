@@ -1,5 +1,5 @@
-import { data } from "autoprefixer";
 import "./App.css";
+import FilterDrop from "./components/FilterDrop";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
@@ -12,7 +12,7 @@ function App() {
       price: 30,
       available: 1,
       vendor: "Himachal Pvt Ltd",
-      category: "Vegtables",
+      category: "Vegetables",
     },
     {
       name: "Banana",
@@ -40,12 +40,18 @@ function App() {
     },
   ];
 
+  const dropdown = new Set();
+  data.forEach((item) => {
+    dropdown.add(item.category);
+  });
+
   return (
-    <div>
+    <>
       <Navbar />
       <Header />
+      <FilterDrop list={dropdown} />
       <Main data={data} />
-    </div>
+    </>
   );
 }
 
