@@ -7,7 +7,7 @@ function Main(props) {
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           {/* <!-- Replace with your content --> */}
           <div className="px-4 py-6 sm:px-0">
-            <div className="grid grid-cols-2">
+            <div className="grid lg:grid-cols-2 sm:grid-cols-1">
               {props.data.map((item) => {
                 return (
                   <div className="border-2 flex justify-between p-5 m-5">
