@@ -20,6 +20,8 @@ function Main(props) {
                         <span className="bg-blue-500 px-2 py-1 text-white rounded-md">
                           Price: ₹{item.price}
                         </span>
+                        <p className="pt-2 px-2">Category: {item.category}</p>
+                        <p className="px-2">Sold By: {item.vendor}</p>
                       </div>
                     </div>
                     <div className=" flex flex-col-reverse">

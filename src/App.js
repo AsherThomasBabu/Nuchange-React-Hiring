@@ -14,7 +14,7 @@ function App() {
       available: 1,
       vendor: "Himachal Pvt Ltd",
       category: "Vegetables",
-      img: "https://www.macmillandictionary.com/external/slideshow/full/141151_full.jpg",
+      img: "https://m.media-amazon.com/images/I/61yXL70-RaL._SX679_.jpg",
     },
     {
       name: "Banana",
