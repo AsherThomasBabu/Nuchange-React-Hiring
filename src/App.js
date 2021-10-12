@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import FilterDrop from "./components/FilterDrop";
 import Header from "./components/Header";
@@ -44,13 +45,25 @@ function App() {
   data.forEach((item) => {
     dropdown.add(item.category);
   });
+  const [display, setDisplay] = useState([...data]);
 
+  const handleFilter = (val) => {
+    if (val === "All") {
+      setDisplay([...data]);
+    } else {
+      setDisplay([
+        ...data.filter((item) => {
+          return item.category === val;
+        }),
+      ]);
+    }
+  };
   return (
     <>
       <Navbar />
       <Header />
-      <FilterDrop list={dropdown} />
-      <Main data={data} />
+      <FilterDrop list={dropdown} handleFilter={handleFilter} />
+      <Main data={display} />
     </>
   );
 }

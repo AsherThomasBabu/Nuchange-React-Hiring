@@ -9,6 +9,7 @@ function FilterDrop(props) {
       <select
         onChange={(e) => {
           console.log(e.target.value);
+          props.handleFilter(e.target.value);
         }}
         name="cars"
         id="cars"
