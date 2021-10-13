@@ -77,6 +77,14 @@ function Navbar() {
                 )}
               </button>
             </div>
+            <div>
+              <a
+                href="#"
+                className=" bg-green-500 text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Checkout
+              </a>
+            </div>
           </div>
         </div>
 
