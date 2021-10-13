@@ -13,7 +13,7 @@ function FilterDrop(props) {
         }}
         name="cars"
         id="cars"
-        className="bg-blue-500 text-xl font-light p-2 text-white"
+        className="bg-blue-400 rounded-md text-xl font-light p-2 text-white"
       >
         <option value="All">All</option>
         {[...props.list].map((item) => {
