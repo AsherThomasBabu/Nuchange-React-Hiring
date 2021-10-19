@@ -66,11 +66,25 @@ function App() {
       ]);
     }
   };
+
+  const handleSearch = (val) => {
+    setDisplay([
+      ...data.filter((item) => {
+        console.log(item.name);
+        console.log(val);
+        return item.name.includes(val);
+      }),
+    ]);
+  };
   return (
     <>
       <Navbar />
       <Header />
-      <FilterDrop list={dropdown} handleFilter={handleFilter} />
+      <FilterDrop
+        list={dropdown}
+        handleFilter={handleFilter}
+        handleSearch={handleSearch}
+      />
       <Main data={display} />
     </>
   );
